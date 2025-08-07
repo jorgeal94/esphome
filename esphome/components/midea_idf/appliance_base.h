@@ -7,11 +7,11 @@
 
 // Incluimos nuestra capa de compatibilidad y la librería vendida
 #include "midea_compat.h"
-#include "lib/Appliance/ApplianceBase.h"
+#include "library/Appliance/ApplianceBase.h"
 #include "ir_transmitter.h"
 
 namespace esphome {
-namespace midea {
+namespace midea_idf {
 
 template<typename T> class ApplianceBase : public Component, public uart::UARTDevice {
   static_assert(std::is_base_of<dudanov::midea::ApplianceBase, T>::value,

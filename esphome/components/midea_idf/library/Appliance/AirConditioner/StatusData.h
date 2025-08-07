@@ -3,7 +3,7 @@
 #include "Frame/FrameData.h"
 
 namespace dudanov {
-namespace midea {
+namespace midea_idf {
 namespace ac {
 
 /// Enum for all modes a Midea device can be in.

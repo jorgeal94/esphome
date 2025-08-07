@@ -3,7 +3,7 @@
 #include "Helpers/Log.h"
 
 namespace dudanov {
-namespace midea {
+namespace midea_idf {
 namespace ac {
 
 static const char *TAG = "AirConditioner";

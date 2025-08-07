@@ -5,7 +5,7 @@
 #include "esphome/components/remote_base/midea_protocol.h"
 
 namespace esphome {
-namespace midea {
+namespace midea_idf {
 
 using remote_base::RemoteTransmitterBase;
 using IrData = remote_base::MideaData;

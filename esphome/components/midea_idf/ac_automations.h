@@ -6,7 +6,7 @@
 #include "air_conditioner.h"
 
 namespace esphome {
-namespace midea {
+namespace midea_idf {
 namespace ac {
 
 template<typename... Ts> class MideaActionBase : public Action<Ts...> {

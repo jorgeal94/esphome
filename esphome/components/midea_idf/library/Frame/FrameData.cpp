@@ -2,7 +2,7 @@
 #include <IPAddress.h>
 
 namespace dudanov {
-namespace midea {
+namespace midea_idf {
 
 uint8_t FrameData::m_id;
 

@@ -7,7 +7,7 @@
 #endif
 
 namespace dudanov {
-namespace midea {
+namespace midea_idf {
 
 static const char *TAG = "ApplianceBase";
 

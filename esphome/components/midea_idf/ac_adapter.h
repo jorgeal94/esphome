@@ -1,13 +1,13 @@
 #pragma once
 
 // Incluye la librería desde nuestra copia local en la carpeta 'lib'
-#include "lib/Appliance/AirConditioner/AirConditioner.h"
+#include "library/Appliance/AirConditioner/AirConditioner.h"
 
 #include "esphome/components/climate/climate_traits.h"
-#include "air_conditioner.h"
+//#include "air_conditioner.h"
 
 namespace esphome {
-namespace midea {
+namespace midea_idf {
 namespace ac {
 
 using MideaMode = dudanov::midea::ac::Mode;

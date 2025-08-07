@@ -2,7 +2,7 @@
 #include "ac_adapter.h"
 
 namespace esphome {
-namespace midea {
+namespace midea_idf {
 namespace ac {
 
 const char *const Constants::TAG = "midea";

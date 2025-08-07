@@ -7,7 +7,7 @@
 #include "Helpers/Logger.h"
 
 namespace dudanov {
-namespace midea {
+namespace midea_idf {
 
 enum ApplianceType : uint8_t {
   DEHUMIDIFIER = 0xA1,

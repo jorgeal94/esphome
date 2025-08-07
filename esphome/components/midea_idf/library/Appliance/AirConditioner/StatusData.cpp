@@ -1,7 +1,7 @@
 #include "Appliance/AirConditioner/StatusData.h"
 
 namespace dudanov {
-namespace midea {
+namespace midea_idf {
 namespace ac {
 
 float StatusData::getTargetTemp() const {

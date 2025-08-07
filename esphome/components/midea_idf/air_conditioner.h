@@ -1,13 +1,13 @@
 #pragma once
 
-#include "lib/Appliance/AirConditioner/AirConditioner.h"
+#include "library/Appliance/AirConditioner/AirConditioner.h"
 
 #include "appliance_base.h"
 #include "esphome/components/sensor/sensor.h"
 #include "esphome/components/climate/climate.h"
 
 namespace esphome {
-namespace midea {
+namespace midea_idf {
 namespace ac {
 
 using sensor::Sensor;

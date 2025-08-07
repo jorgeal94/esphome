@@ -1,7 +1,7 @@
 #include "Frame/Frame.h"
 
 namespace dudanov {
-namespace midea {
+namespace midea_idf {
 
 void Frame::setData(const FrameData &data) {
   this->m_trimData();

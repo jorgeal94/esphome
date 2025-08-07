@@ -41,7 +41,7 @@ DEPENDENCIES = ["climate", "uart"]
 AUTO_LOAD = ["sensor"]
 CONF_POWER_USAGE = "power_usage"
 CONF_HUMIDITY_SETPOINT = "humidity_setpoint"
-midea_ac_ns = cg.esphome_ns.namespace("midea").namespace("ac")
+midea_ac_ns = cg.esphome_ns.namespace("midea_idf").namespace("ac")
 AirConditioner = midea_ac_ns.class_("AirConditioner", climate.Climate, cg.Component)
 Capabilities = midea_ac_ns.namespace("Constants")
 

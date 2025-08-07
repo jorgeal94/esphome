@@ -5,7 +5,7 @@
 #include "Helpers/Helpers.h"
 
 namespace dudanov {
-namespace midea {
+namespace midea_idf {
 
 class Frame {
  public:

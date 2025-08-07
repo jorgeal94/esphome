@@ -8,7 +8,7 @@
 #include <cstdint>
 
 namespace esphome {
-namespace midea {
+namespace midea_idf {
 namespace ac {
 
 static void set_sensor(Sensor *sensor, float value) {
@@ -55,7 +55,7 @@ void AirConditioner::on_status_change() {
 }
 
 void AirConditioner::control(const ClimateCall &call) {
-  dudanov::midea::ac::Control ctrl{};
+  dudanov::midea_idf::ac::Control ctrl{};
   if (call.get_target_temperature().has_value())
     ctrl.targetTemp = call.get_target_temperature().value();
   if (call.get_swing_mode().has_value())
@@ -91,7 +91,7 @@ ClimateTraits AirConditioner::traits() {
   traits.add_supported_fan_mode(ClimateFanMode::CLIMATE_FAN_LOW);
   traits.add_supported_fan_mode(ClimateFanMode::CLIMATE_FAN_MEDIUM);
   traits.add_supported_fan_mode(ClimateFanMode::CLIMATE_FAN_HIGH);
-  if (this->base_.getAutoconfStatus() == dudanov::midea::AUTOCONF_OK)
+  if (this->base_.getAutoconfStatus() == dudanov::midea_idf::AUTOCONF_OK)
     Converters::to_climate_traits(traits, this->base_.getCapabilities());
   if (!traits.get_supported_modes().empty())
     traits.add_supported_mode(ClimateMode::CLIMATE_MODE_OFF);
@@ -112,9 +112,9 @@ void AirConditioner::dump_config() {
 #ifdef USE_REMOTE_TRANSMITTER
   ESP_LOGCONFIG(Constants::TAG, "  [x] Using RemoteTransmitter");
 #endif
-  if (this->base_.getAutoconfStatus() == dudanov::midea::AUTOCONF_OK) {
+  if (this->base_.getAutoconfStatus() == dudanov::midea_idf::AUTOCONF_OK) {
     this->base_.getCapabilities().dump();
-  } else if (this->base_.getAutoconfStatus() == dudanov::midea::AUTOCONF_ERROR) {
+  } else if (this->base_.getAutoconfStatus() == dudanov::midea_idf::AUTOCONF_ERROR) {
     ESP_LOGW(Constants::TAG,
              "Failed to get 0xB5 capabilities report. Suggest to disable it in config and manually set your "
              "appliance options.");

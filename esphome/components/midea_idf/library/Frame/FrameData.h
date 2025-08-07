@@ -5,7 +5,7 @@
 class IPAddress;
 
 namespace dudanov {
-namespace midea {
+namespace midea_idf {
 
 class FrameData {
  public:
